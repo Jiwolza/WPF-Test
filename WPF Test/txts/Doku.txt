@@ -1,3 +1,10 @@
+
+Download:
+https://htmlpreview.github.io/?https://raw.githubusercontent.com/Jiwolza/WPF-Test/master/published/Publish.html
+
+Release: Veröffentlichen und zu Git Pushen
+
+
 ------------------------------------------------------------------
 GAMEOBJECT:
 ------------------------------------------------------------------
