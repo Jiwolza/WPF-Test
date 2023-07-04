@@ -1,0 +1,45 @@
+------------------------------------------------------------------
+IDEAS TO GET BACK INTO IT:
+------------------------------------------------------------------
+- Change MainWindow-Progression into iteration
+  -> Change csv accordingly
+  -> Implement Shortcut
+
+- Change Effect of first Strength Items to 0.01 start (for scaling)
+  -> Change Progress steps to count, not score
+
+  - Make XAML-Presets better (colors, names of brushes, ...)
+
+
+------------------------------------------------------------------
+BUGS:
+------------------------------------------------------------------
+- If you click real fast CD and Queue are skipped at the start
+
+
+
+------------------------------------------------------------------
+Open Items: MUST HAVES
+------------------------------------------------------------------
+- (Hidden) Achievements Framework
+- Story Framework
+- Boss fight Framework
+- Skalierungs-Steps Framework
+- GIT & Distribution
+
+
+
+------------------------------------------------------------------
+Open Items: NICE TO HAVE
+------------------------------------------------------------------
+- Settings Framework
+- Perkauswahl / Skillbaum Framework
+- Sound Framework
+- Show Achievements in Menu: Overall (all, grayed out if open), Discovered hidden
+
+
+
+------------------------------------------------------------------
+Open Items: OTHER
+------------------------------------------------------------------
+

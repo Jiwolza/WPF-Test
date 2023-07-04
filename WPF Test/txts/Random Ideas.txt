@@ -1,0 +1,26 @@
+Ideas:
+- Ganzes Game Layout auch minimal starten? (Kein Titel, kein Maximieren, etc. - erst später bekommen) -> Übergreifende Achievements?
+  o Spiel startet beim ersten mal direkt (Kein Hauptmenu)
+  o Vielleicht als Tutorial: Erst verstehen, worum es geht und Menu usw. freischalten, und danach das eigentliche Spiel starten
+
+
+- Minimalistischer Ansatz
+  o Am Anfang: Kein Pause, keine Score, kein Timer, keine Zeitangaben, wie lange etwas dauert etc...
+
+
+- Scoreboard zum Vergleichen: 
+  o Zeit, Accuracy (wie oft das beste Upgrade gewählt?), Idle Time, IGTime / Total Time
+
+- Achievements
+  o Es gibt hidden Achievements
+  o Achievements können was kosten
+  o Lange Zeit nichts machen gibt Achievement
+  o Its over 9.000
+
+- Ebene 1: Kostet nur Zeit
+- Ebene 2: Kostet Geld
+- Ebene 3: Kostet Spiritualität
+
+- Modifier für Zeit dazuschalten
+
+- Tutorial einfach als andere Story Elemente

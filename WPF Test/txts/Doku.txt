@@ -1,0 +1,76 @@
+------------------------------------------------------------------
+GAMEOBJECT:
+------------------------------------------------------------------
+- Classes:
+  o MainWindow.xaml.vb:		Hauptklasse für alle Grundefunktionen des Spiels
+  o clCSVdata.vb:			Lesen von csv Dateien. Wird vererbt an Story, Achievement und Progress
+  o clHandleAchievement.vb:	Verarbeitet die Logik von Achievements
+  o clHandleBosses.vb:		Abhandeln von allem rund um Bosse
+  o clHandleProgress.vb:	Fortschritts-Schritte werden hiermit verarbeitet
+  o clHandleStory.vb:		Handler für Story Elemente
+  o clValue.vb:				Klasse für die Verarbeitung von großen Zahlen. Darstellung von 1.99k usw.
+  
+- XAML:
+  o Application:			No Idea :D
+  o Main Window:			Generelles Layout der Spiel-Screens
+  o Styles:					Grundsätzliche Farben und Button Designs. Wird von anderen XAMLs importiert
+
+- User Controls:
+  o ucAchievement.xaml		Darstellung und Objektlogik von Achievements
+  o ucAction.xaml			Darstellung und Objektlogik von Actions (z.B. "Pushup" usw.)
+  o ucBoss.xaml				Darstellung und Objektlogik von Bossen
+  o ucStat.xaml				Darstellung und Objektlogik von Stats
+
+
+
+------------------------------------------------------------------
+GAMELOOP:
+------------------------------------------------------------------
+- Some Actions are done in everey loop, some are seperated for performance concerns and only run every x frames
+
+
+------------------------------------------------------------------
+FEATURES:
+------------------------------------------------------------------
+Progress:
+- Progress is managed in its csv file
+- Progress is contineous. You must have achieved a previous one in order to progress
+- The game always checks, whether the next step is reached
+- The requirements are filled in the corresponding columns 
+
+Story:
+- Story elements are managed in its csv file
+- The key is an upcounting number to identify the story elements already displayed
+- The step is the order of texts shown for this story element
+- The requirements are filled in the corresponding columns 
+- For dynamic elements "%<obj>" is used and replaced at runtime (e.g. %name, %he, %His)
+
+Achievements:
+- Achievements are managed in its csv file
+- key is a technical identifier to track the achievements already unlocked
+- type seperates the achievements: 
+  o progress: linked to progress, all of these happen in every playthrough (because progress is linear / catched up if steps were skipped)
+  o hidden: may or may not happen during playthrough, give interesting rewards
+  o overall: is only achieved once per account (resetable?), unlocks genereal game features (diffulty level, custom name, ...)
+- tile is shown ingame
+- text is shown ingame (mouse over or plain text)
+- prize defines the award for reaching this achievement
+
+Requirement objects:
+- hidden and always applied: this object was not shown before
+- igtime: Checks the ingame timer
+- progress: A certain game progress has been achieved
+
+
+
+
+
+
+
+
+Ursprüngliches Ziel: Key Features:
+- Mathematisches Entscheidungsspiel zur Ergebnismaximierung
+- Skalierend auf überraschende Größenordnung
+- Mess- und Vergleichbar: Scoreboards
+- Wiederspielwert durch Übergreifenden Fortschritt / Zufallselementen / Unterschiedlicher Strategien / Neuentdeckungen / Next game+
+- Story- und Character-Elemente
