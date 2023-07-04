@@ -545,7 +545,6 @@
     Private Sub Test_Sub()
 
         'Dim vTest, vTest2 As clValue
-
         'vTest = New clValue(1230)
         'vTest2 = New clValue(8.24, 1)
         'MessageBox.Show(vTest.Write_V)
