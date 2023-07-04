@@ -552,6 +552,7 @@
         'vTest.Add(vTest2)
         'MessageBox.Show(vTest.Write_V)
 
+
         'vTest.Multiply(vTest2)
         'MessageBox.Show(vTest.Write_V)
 
