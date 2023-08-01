@@ -1,0 +1,11 @@
+id;active;ge_progress;ge_igtime;le_igtime;ge_score;le_score;ge_pushup_l;le_pushup_l;desc
+1;x;0;200;;;;;;increase progress to show start Text
+2;x;1;;;;;;;after first dialogue is shown, the first screen item can be displayed
+3;x;2;;;;;1;;pChangeActionText1
+4;x;3;;;;;2;;pChangeActionText2
+5;x;4;;;;;3;;pIntroduceScore
+6;x;5;;;;;10;;pIntroduceCooldown
+7;x;6;;;;;15;;pIntroduceQueue
+8;x;7;;;;;25;;pShowSecondActionItem
+9;x;8;;;;;35;;pShowEffectValue
+10;x;9;;;;;40;;pAdvancedControls

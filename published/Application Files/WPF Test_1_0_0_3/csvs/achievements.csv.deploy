@@ -1,0 +1,3 @@
+id;active;type;title;text;prizeobj;prizesign;prizeval;ge_progress;ge_igtime;le_igtime;ge_score;le_score;ge_pushup_l;le_pushup_l
+1;x;hidden;Idleing;You have successfully played 10 seconds of this game - congratulations;pushup_e;add;0,5;2;17000;;;;;0
+2;;progress;Achievement after 25 secs;You have successfully played 25 seconds of this game - amazing;powerlevel;add;1000;;25000;;;;;

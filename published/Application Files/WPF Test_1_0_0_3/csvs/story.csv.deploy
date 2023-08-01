@@ -1,0 +1,10 @@
+key;step;active;type;text;ge_progress;ge_igtime;le_igtime;ge_score;le_score;ge_pushup_l;le_pushup_l
+0;1;x;main;This is the story about %name.;1;;;;;;
+0;2;x;main;%He was done... done accepting defeat... done with settling for anything less than success... So %he decided to start working out...;1;;;;;;
+1;1;x;main;%name noticed, that %he was getting stronger with every pushup %he counted...;5;;;;;;
+2;1;x;main;With time %name noticed, that doing Pushups was getting harder and harder, the more %he had done. %He needed some time inbetween.;6;;;;;;
+3;1;x;main;Introducing: Queues;7;;;;;;
+4;1;x;main;Other Options;8;;;;;;
+5;1;x;main;Then %he noticed, that different exercises had a different effect, and also provided different value to %his strength.;9;;;;;;
+6;1;x;hidden;But %he could not bring %himself to start...;;10000;;;;;0
+7;1;x;hidden;...not at all...;;15000;;;;;0
