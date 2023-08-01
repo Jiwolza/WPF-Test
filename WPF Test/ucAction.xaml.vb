@@ -155,6 +155,8 @@
         Dim check_progress_step As Integer = 0
 
         If check_progress_step = visual_progress Then
+            visual_progress += 1
+
             lbQ.Visibility = Visibility.Hidden
             lbAcont.Visibility = Visibility.Hidden
             lbQcont.Visibility = Visibility.Hidden
@@ -174,12 +176,12 @@
             btnAction.Height = 50
             Canvas.SetLeft(btnAction, 0)
 
-            visual_progress += 1
             Exit Sub
         End If
         check_progress_step += 1
 
         If check_progress_step = visual_progress Then 'Show Score
+            visual_progress += 1
             If clTop.playAnimations And Not clTop.isAnimating Then
                 clTop.isAnimating = True
                 lbL.Opacity = 0
@@ -205,12 +207,13 @@
             borAction.Opacity = 100
             borAction.Visibility = Visibility.Visible
 
-            visual_progress += 1
             Exit Sub
         End If
         check_progress_step += 1
 
         If check_progress_step = visual_progress Then 'Introduce Cooldown
+            visual_progress += 1
+
             If clTop.playAnimations And Not clTop.isAnimating Then
                 clTop.isAnimating = True
                 lbCD.Opacity = 0
@@ -229,12 +232,12 @@
             lbCDcont.Opacity = 100
             lbCDcont.Visibility = Visibility.Visible
 
-            visual_progress += 1
             Exit Sub
         End If
         check_progress_step += 1
 
         If check_progress_step = visual_progress Then 'Introduce Queueing
+            visual_progress += 1
             If clTop.playAnimations And Not clTop.isAnimating Then
                 clTop.isAnimating = True
                 lbQ.Opacity = 0
@@ -253,12 +256,12 @@
             lbQcont.Opacity = 100
             lbQcont.Visibility = Visibility.Visible
 
-            visual_progress += 1
             Exit Sub
         End If
         check_progress_step += 1
 
         If check_progress_step = visual_progress Then 'Show Effect and Value
+            visual_progress += 1
             If clTop.playAnimations And Not clTop.isAnimating Then
                 clTop.isAnimating = True
                 lbE.Opacity = 0
@@ -287,12 +290,12 @@
             lbVcont.Opacity = 100
             lbVcont.Visibility = Visibility.Visible
 
-            visual_progress += 1
             Exit Sub
         End If
         check_progress_step += 1
 
         If check_progress_step = visual_progress Then 'Enable advanced Queueing
+            visual_progress += 1
             If clTop.playAnimations And Not clTop.isAnimating Then
                 clTop.isAnimating = True
 
@@ -304,7 +307,6 @@
 
             'btnEndlessQueue.Visibility = Visibility.Visible
 
-            visual_progress += 1
             Exit Sub
         End If
 
@@ -326,19 +328,19 @@
 #Region "Region: Buttons"
 
     Private Sub btnAction_Click(sender As Object, _e As RoutedEventArgs) Handles btnAction.Click
-        If visual_progress < 2 Then
+        If visual_progress < 3 Then
             l.Add(New clValue(1))
             v.v = l.v
             v.d = l.d
             v.Multiply(e)
             lbLcont.Content = l.Write_V
-        ElseIf visual_progress = 2 Then
+        ElseIf visual_progress = 3 Then
             If tsCooldownActive < clTop.swIGTime.Elapsed Then
                 wasClicked = True
                 tsCooldownActive = clTop.swIGTime.Elapsed + tsCooldownValue
             End If
 
-        ElseIf visual_progress > 2 Then
+        ElseIf visual_progress > 3 Then
             If tsCooldownActive < clTop.swIGTime.Elapsed Then
                 wasClicked = True
                 tsCooldownActive = clTop.swIGTime.Elapsed + tsCooldownValue

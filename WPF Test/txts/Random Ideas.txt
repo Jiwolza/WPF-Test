@@ -24,3 +24,6 @@ Ideas:
 - Modifier für Zeit dazuschalten
 
 - Tutorial einfach als andere Story Elemente
+
+- Text to speech als Standard-Funktion
+
